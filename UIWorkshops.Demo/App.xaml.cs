@@ -3,14 +3,14 @@ using UIWorkshops.Demos.Windows;
 
 namespace UIWorkshops.Demos
 {
-    public partial class App : Application
+  public partial class App : Application
+  {
+    protected override void OnStartup(StartupEventArgs e)
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            MainWindow = new DropdownMenuDemoWindow();
-            MainWindow.Show();
+      MainWindow = new DropdownMenuDemoWindow();
+      MainWindow.Show();
 
-            base.OnStartup(e);
-        }
+      base.OnStartup(e);
     }
+  }
 }
